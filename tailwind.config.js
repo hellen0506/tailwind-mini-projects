@@ -4,6 +4,9 @@ module.exports = {
       "src/**/*.html"
   ],
   theme: {
+    fontFamily: {
+      barlow: ['Barlow Condensed', 'sans-serif'],
+    },
     extend: {
     },
   },
