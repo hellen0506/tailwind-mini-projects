@@ -37,6 +37,19 @@
 
     /*Testimonial Grid*/
     .testimonial-img {
-        @apply  w-10 h-10 rounded-full ring-2 ring-purple-300 hover:scale-105;
+        @apply w-10 h-10 rounded-full ring-2 ring-purple-300 hover:scale-105;
+    }
+
+    /*Clipboard Website*/
+    .heading {
+        @apply font-semibold text-black text-5xl text-[#4d545d]
+    }
+
+    .description {
+        @apply text-2xl text-[#95a1ae];
+    }
+
+    .clipboard-box {
+        @apply space-y-8 max-w-3xl mx-auto my-16;
     }
 }

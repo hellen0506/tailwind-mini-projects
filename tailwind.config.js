@@ -6,10 +6,13 @@ module.exports = {
   theme: {
     fontFamily: {
       barlow: ['Barlow Condensed', 'sans-serif'],
+      BaiJamjuree: ['Bai Jamjuree', 'sans-serif']
     },
     extend: {
       backgroundImage: {
         'pattern-quote': "url('./../images/testimonial/bg-pattern-quotation.svg')",
+        'clipboard-header-dt': "url('./../images/clipboard/bg-header-desktop.png')",
+        'clipboard-header-mb': "url('./../images/clipboard/bg-header-mobile.png')",
       }
     },
   },
