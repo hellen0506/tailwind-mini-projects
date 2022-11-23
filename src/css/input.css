@@ -41,8 +41,18 @@
     }
 
     /*Clipboard Website*/
-    .heading {
-        @apply font-semibold text-black text-5xl text-[#4d545d]
+    .btn {
+        @apply w-auto px-8 py-4 mx-auto rounded-full duration-300 text-xl text-white shadow-xl  hover:ring-opacity-75;
+    }
+
+    .h3-heading {
+        @apply font-semibold text-5xl text-[#4d545d]
+    }
+    .h4-heading {
+        @apply font-semibold text-2xl text-[#4d545d]
+    }
+    .h5-heading {
+        @apply pt-6 font-semibold text-2xl text-[#4d545d]
     }
 
     .description {
@@ -52,4 +62,5 @@
     .clipboard-box {
         @apply space-y-8 max-w-3xl mx-auto my-16;
     }
+
 }

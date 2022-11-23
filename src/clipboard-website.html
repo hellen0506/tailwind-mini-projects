@@ -14,44 +14,45 @@
     <header class="mt-20 mb-xl">
         <img class="mx-auto" src="./images/clipboard/logo.svg" alt="Clipboard">
         <div class="clipboard-box mt-16 ">
-            <h3 class="heading">A history of everything you copy</h3>
+            <h3 class="h3-heading">A history of everything you copy</h3>
             <p class="description">Clipboard allows you to track and organize everything you copy.<br>
                 Instantly access your clipboard on all your devices</p>
-            <div>
-                <button>Download for iOS</button>
-                <button>Download for Mac</button>
+            <div class="space-x-2">
+                <button class="btn bg-emerald-500 hover:bg-emerald-700">Download for iOS</button>
+                <button class="btn bg-indigo-500 hover:bg-indigo-700">Download for Mac</button>
             </div>
         </div>
     </header>
 
     <div class="clipboard-box">
-        <h3 class="heading">Kepp track of your snippets</h3>
+        <h3 class="h3-heading">Kepp track of your snippets</h3>
         <p class="description">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices.
             Our Mac and iOS apps will help you organize everything </p>
     </div>
 
-    <section class="">
-        <div>
+    <div class="grid grid-cols-5 grid gap-x-20 my-32">
+        <div class="col-start-1 col-span-3">
             <img src="./images/clipboard/image-computer.png" alt="Computer" />
         </div>
+        <div class="max-w-sm text-left col-start-4 col-span-2">
+            <div class="space-y-2 mb-16">
+                <h4 class="h4-heading">Quick Search</h4>
+                <p class="description text-xl">Easily search your snippets by content, category, web address, application, and more.</p>
+            </div>
+            <div class="space-y-2 mb-16">
+                <h4 class="h4-heading">iCloud Sync</h4>
+                <p class="description text-xl">Instantly saves and syncs snippets across all your devices.</>
+            </div>
+            <div class="space-y-2 mb-16">
+                <h4 class="h4-heading">Completely History</h4>
+                <p class="description text-xl">Retrieve any snippets from the first moment you started using the app.</p>
+            </div>
+        </div>
+    </div>
 
-        <div class="">
-            <h4>Quick Search</h4>
-            <p class="description">Easily search your snippets by content, category, web address, application, and more.</p>
-        </div>
-        <div class="">
-            <h4>iCloud Sync</h4>
-            <p>Instantly saves and syncs snippets across all your devices.</p>
-        </div>
-        <div class="">
-            <h4>Completely History</h4>
-            <p class="description">Retrieve any snippets from the first moment you started using the app.</p>
-        </div>
-    </section>
-
-    <section class="">
+    <div>
         <div class="clipboard-box">
-            <h3 class="heading">Access Clipboard anywhere</h3>
+            <h3 class="h3-heading">Access Clipboard anywhere</h3>
             <p class="description">Whether you're on the go, or at your computer, you can access all your Clipboard snippets
             in a few simp clicks.</p>
         </div>
@@ -59,29 +60,28 @@
             <img  class="mx-auto" src="./images/clipboard/image-devices.png" alt="Devices" />
         </div>
         <div class="clipboard-box">
-            <h3 class="heading">Supercharge your workflow</h3>
+            <h3 class="h3-heading">Supercharge your workflow</h3>
             <p class="description">We've got the tools to boost your productivity.</p>
         </div>
-    </section>
-        <div>
-            <div class="group">
-                <img  src="./images/clipboard/icon-blacklist.svg"  alt="Google" />
-                <h5>Create blacklists</h5>
-                <p class="description">Easily search your snippets by content, category, web address, application, and more.</p>
+    </div>
+        <div class="flex flex-row items-center justify-around">
+            <div class="group space-y-6">
+                <img class="mx-auto" src="./images/clipboard/icon-blacklist.svg"  alt="black list" />
+                <h5 class="h5-heading">Create blacklists</h5>
+                <p class="description text-base max-w-xs">Easily search your snippets by content, category, web address, application, and more.</p>
             </div>
-            <div class="group">
-                <img  src="./images/clipboard/icon-text.svg" alt="Google" />
-                <h5>Plain text snippets</h5>
-                <p class="description">Remove unwanted formatting from copied text for a consistent look.</p>
+            <div class="group space-y-6">
+                <img class="mx-auto" src="./images/clipboard/icon-text.svg" alt="snippets" />
+                <h5 class="h5-heading">Plain text snippets</h5>
+                <p class="description text-base max-w-xs">Remove unwanted formatting from copied text for a consistent look.</p>
             </div>
-            <div class="group">
-                <img src="./images/clipboard/icon-preview.svg" alt="Google" />
-                <h5>Sneak preview</h5>
-                <p class="description">Quick preview of all snippets on your Clipboard for easy access.</p>
+            <div class="group space-y-6">
+                <img class="mx-auto" src="./images/clipboard/icon-preview.svg" alt="Sneak" />
+                <h5 class="h5-heading">Sneak preview</h5>
+                <p class="description text-base max-w-xs">Quick preview of all snippets on your Clipboard for easy access.</p>
             </div>
         </div>
-
-        <div>
+    <div class="flex flex-row items-center justify-around mt-36 mb-36">
             <img src="./images/clipboard/logo-google.png" alt="Google" />
             <img src="./images/clipboard/logo-ibm.png" alt="IBM" />
             <img src="./images/clipboard/logo-microsoft.png" alt="Microsoft" />
@@ -89,12 +89,12 @@
             <img src="./images/clipboard/logo-vector-graphics.png" alt="Vector Graphics" />
         </div>
     <section class="clipboard-box">
-        <h3 class="heading">Clipboard for iOS and Mac OS</h3>
+        <h3 class="h3-heading">Clipboard for iOS and Mac OS</h3>
         <p class="description">Available for free on the App Store. Download for Mac or iOS, sync
         with iCloud and you're ready to start adding to your clipboard.</p>
-        <div>
-            <button>Download for iOS</button>
-            <button>Download for Mac</button>
+        <div class="space-x-2">
+            <button class="btn bg-emerald-500 hover:bg-emerald-700">Download for iOS</button>
+            <button class="btn bg-indigo-500 hover:bg-indigo-700">Download for Mac</button>
         </div>
     </section>
 
