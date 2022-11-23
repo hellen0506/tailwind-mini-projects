@@ -8,6 +8,9 @@ module.exports = {
       barlow: ['Barlow Condensed', 'sans-serif'],
     },
     extend: {
+      backgroundImage: {
+        'pattern-quote': "url('./../images/testimonial/bg-pattern-quotation.svg')",
+      }
     },
   },
   plugins: [],
