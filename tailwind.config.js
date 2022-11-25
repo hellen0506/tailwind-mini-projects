@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       barlow: ['Barlow Condensed', 'sans-serif'],
-      BaiJamjuree: ['Bai Jamjuree', 'sans-serif']
+      baijam: ['Bai Jamjuree', 'sans-serif']
     },
     extend: {
       backgroundImage: {

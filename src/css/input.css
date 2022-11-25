@@ -46,21 +46,22 @@
     }
 
     .h3-heading {
-        @apply font-semibold text-5xl text-[#4d545d]
+        @apply font-semibold text-3xl md:text-5xl text-gray-600
     }
     .h4-heading {
-        @apply font-semibold text-2xl text-[#4d545d]
+        @apply font-semibold text-2xl text-gray-600
     }
+
     .h5-heading {
-        @apply pt-6 font-semibold text-2xl text-[#4d545d]
+        @apply pt-6 font-semibold text-2xl text-gray-600
     }
 
     .description {
-        @apply text-2xl text-[#95a1ae];
+        @apply text-xl md:text-2xl text-slate-400;
     }
 
     .clipboard-box {
-        @apply space-y-8 max-w-3xl mx-auto my-16;
+        @apply space-y-8 max-w-3xl mx-auto my-14 px-8 md:my-20 ;
     }
 
 }
