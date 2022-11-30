@@ -10,10 +10,16 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
     },
     extend: {
+      backgroundColor:{
+        'boots': "#3B3054",
+        'cyan-btn':"#2ACFCF",
+      },
       backgroundImage: {
         'pattern-quote': "url('./../images/testimonial/bg-pattern-quotation.svg')",
         'clipboard-header-dt': "url('./../images/clipboard/bg-header-desktop.png')",
         'clipboard-header-mb': "url('./../images/clipboard/bg-header-mobile.png')",
+        'boost-dt': "url('./../images/shortly/bg-boost-desktop.svg')",
+        'boost-mb': "url('./../images/shortly/bg-boost-mobile.svg')",
       },
       maxWidth: {
         'custom': '1220px',

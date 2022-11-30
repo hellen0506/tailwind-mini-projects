@@ -1,63 +1,208 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sortly Website</title>
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
-    </style>
-</head>
-<body class="font-poppins">
-<div class="mx-auto pt-12 text-center bg-white">
-    <header class="max-w-xl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sortly Website</title>
+        <link href="./css/style.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
+        </style>
+    </head>
+    <body class="bg-gray-100/50 font-poppins">
+        <div class="mx-auto max-w-[1100px] pt-12 text-center">
+            <header class="mx-auto flex flex-col justify-between md:flex-row">
+                <div><img src="./images/shortly/logo.svg" alt="Shortly" /></div>
+                <div class="flex flex-col md:flex-row">
+                    <a href="#" class="font-bold text-gray-400">Features</a>
+                    <a href="#" class="font-bold text-gray-400">Pricing</a>
+                    <a href="#" class="font-bold text-gray-400">Resources</a>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                    <a href="#" class="font-bold text-gray-400">Login</a>
+                    <a
+                        href="#"
+                        class="rounded-full bg-cyan-btn px-10 py-3 font-bold text-white duration-500 hover:bg-cyan-500"
+                        >Sign up</a
+                    >
+                </div>
+            </header>
+            <div class="flex flex-col justify-between align-middle md:flex-row">
+                <div>
+                    <h2>More than just shorter links</h2>
+                    <p class="text-base text-gray-400">
+                        Build your brand's recognition and get detailed insights
+                        on how your links are performing
+                    </p>
+                    <button
+                        class="rounded-full bg-cyan-btn px-10 py-3 font-bold text-white duration-500 hover:bg-cyan-500"
+                    >
+                        Get Stared
+                    </button>
+                </div>
+                <div>
+                    <img
+                        src="./images/shortly/illustration-working.svg"
+                        alt="Illustration"
+                    />
+                </div>
+            </div>
 
-    </header>
-    <section>
-        <div  class="max-w-custom mx-auto">
+            <div>
+                <form
+                    class="mx-auto max-w-[850px] rounded-lg bg-boots p-10"
+                    action="post"
+                >
+                    <fieldset class="grid grid-cols-4 gap-4">
+                        <input
+                            class="col-span-3 rounded-lg px-4 text-orange-300 placeholder:text-orange-300"
+                            type="text"
+                            value=""
+                            placeholder="Shorten a link here"
+                        />
+                        <button
+                            class="rounded-lg bg-cyan-btn px-10 py-4 font-bold text-white duration-500 hover:bg-cyan-500"
+                        >
+                            Shorten It!
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="mx-auto mt-28 mb-20 max-w-[400px] space-y-6">
+                <h3 class="text-4xl font-bold text-black">
+                    Advanced Statistics
+                </h3>
+                <p class="text-sm text-gray-400">
+                    Track house your links are performing across the web with
+                    our advanced statistics dashboard
+                </p>
+            </div>
+
+            <div class="my-36 grid grid-cols-3 gap-8">
+                <div class="bg-white p-10">
+                    <img
+                        src="./images/shortly/icon-brand-recognition.svg"
+                        alt="Brand Recognition"
+                    />
+                    <h4 class="text-bold text-black">Brand Recognition</h4>
+                    <p class="text-gray-500">
+                        Boost your brand recognition with each click. Generic
+                        links don't mean a thing. Branded links help instill
+                        confidence in your content.
+                    </p>
+                </div>
+                <div class="bg-white p-10">
+                    <img
+                        src="./images/shortly/icon-detailed-records.svg"
+                        alt="Detailed Records"
+                    />
+                    <h4 class="text-bold text-black">Detailed Records</h4>
+                    <p class="text-gray-500">
+                        Boost your brand recognition with each click. Generic
+                        links don't mean a thing. Branded links help instill
+                        confidence in your content.
+                    </p>
+                </div>
+                <div class="bg-white p-10">
+                    <img
+                        src="./images/shortly/icon-fully-customizable.svg"
+                        alt="Fully Customizable"
+                    />
+                    <h4 class="text-bold text-black">Fully Customizable</h4>
+                    <p class="text-gray-500">
+                        Boost your brand recognition with each click. Generic
+                        links don't mean a thing. Branded links help instill
+                        confidence in your content.
+                    </p>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <section>
-
-    </section>
-    <footer class="bg-zinc-800 py-14">
-        <div  class="max-w-custom mx-auto grid grid-cols-4">
-            <div class="">
-                <img src="./images/shortly/logo.svg" alt="Clipboard" class="w-16 mx-auto">
-            </div>
-            <div class="grid grid-cols-1 gap-y-3  col-span-2 my-10 text-center text-white md:grid-cols-3 md:gap-x-14 md:my-0  md:text-left">
-                <div  class="flex flex-col space-y-2">
-                    <h3 class="font-bold mb-4">Features</h3>
-                    <a href="#" class="text-purple-light hover:text-purple-light">Link Shortening</a>
-                    <a href="#" class="text-purple-light hover:text-purple-light">Branded Links</a>
-                    <a href="#" class="text-purple-light hover:text-purple-light">Analytics</a>
-                </div>
-                <div  class="flex flex-col space-y-2">
-                    <h3 class="font-bold mb-4">Resource</h3>
-                    <a href="#" class="text-purple-light hover:text-teal-500">Blog</a>
-                    <a href="#" class="text-purple-light hover:text-teal-500">Developers</a>
-                    <a href="#" class="text-purple-light hover:text-teal-500">Support</a>
-                </div>
-                <div  class="flex flex-col space-y-2">
-                    <h3 class="font-bold mb-4">Company</h3>
-                    <a href="#" class="text-purple-light hover:text-teal-500">About</a>
-                    <a href="#" class="text-purple-light hover:text-teal-500">Our Team</a>
-                    <a href="#" class="text-purple-light hover:text-teal-500">Careers</a>
-                    <a href="#" class="text-purple-light hover:text-teal-500">Contact</a>
-                </div>
-
-            </div>
-            <div class="flex flex-row space-x-6">
-                <i class="fa-brands fa-square-facebook text-black text-3xl hover:text-teal-500"></i>
-                <i class="fa-brands fa-twitter text-black text-3xl hover:text-teal-500"></i>
-                <i class="fa-brands fa-pinterest text-black text-3xl hover:text-teal-500"></i>
-                <i class="fa-brands fa-instagram text-black text-3xl hover:text-teal-500"></i>
-            </div>
+        <div
+            class="bg-boots bg-boost-mb bg-contain bg-center bg-no-repeat py-20 text-center md:bg-boost-dt"
+        >
+            <h3 class="mb-6 text-3xl font-bold text-white">
+                Boost your links today
+            </h3>
+            <button
+                class="rounded-full bg-cyan-btn px-10 py-3 font-bold text-white duration-500 hover:bg-cyan-500"
+            >
+                Get Stared
+            </button>
         </div>
-    </footer>
-</div>
-</body>
+
+        <footer class="bg-zinc-800 py-14">
+            <div class="mx-auto grid max-w-custom grid-cols-4">
+                <div class="">
+                    <img
+                        src="./images/shortly/logo.svg"
+                        alt="Clipboard"
+                        class="mx-auto w-32"
+                    />
+                </div>
+                <div
+                    class="col-span-2 my-10 grid grid-cols-1 gap-y-3 text-center text-white md:my-0 md:grid-cols-3 md:gap-x-14 md:text-left"
+                >
+                    <div class="flex flex-col space-y-2">
+                        <h3 class="mb-4 font-bold">Features</h3>
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Link Shortening</a
+                        >
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Branded Links</a
+                        >
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Analytics</a
+                        >
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <h3 class="mb-4 font-bold">Resource</h3>
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Blog</a
+                        >
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Developers</a
+                        >
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Support</a
+                        >
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <h3 class="mb-4 font-bold">Company</h3>
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >About</a
+                        >
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Our Team</a
+                        >
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Careers</a
+                        >
+                        <a href="#" class="text-gray-500 hover:text-cyan-500"
+                            >Contact</a
+                        >
+                    </div>
+                </div>
+                <div class="flex flex-row space-x-5">
+                    <i
+                        class="fa-brands fa-square-facebook text-2xl text-white hover:text-cyan-900"
+                    ></i>
+                    <i
+                        class="fa-brands fa-twitter text-2xl text-white hover:text-cyan-900"
+                    ></i>
+                    <i
+                        class="fa-brands fa-pinterest text-2xl text-white hover:text-cyan-900"
+                    ></i>
+                    <i
+                        class="fa-brands fa-instagram text-2xl text-white hover:text-cyan-900"
+                    ></i>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
