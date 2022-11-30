@@ -3,18 +3,18 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link
-        rel="shortcut icon"
-        href="./assets/favicon.ico"
-        type="image/x-icon"
-    />
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.ico"
+            type="image/x-icon"
+        />
         <title>Sortly Website</title>
         <link
-        rel="shortcut icon"
-        href="./assets/favicon.ico"
-        type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+            rel="shortcut icon"
+            href="./assets/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="css/style.css" />
         <link href="./css/style.css" rel="stylesheet" />
         <link
             rel="stylesheet"
@@ -27,30 +27,54 @@
     <body class="bg-gray-100/50 font-poppins">
         <div class="mx-auto max-w-[940px] pt-8 text-center">
             <header class="mx-auto grid grid-cols-5 gap-4">
-                <div class="flex items-center"><img src="./assets/images/shortly/logo.svg" alt="Shortly" /></div>
-                <div class="col-span-3 flex flex-col items-center space-x-6 md:flex-row">
-                    <a href="#" class="font-bold text-slate-400">Features</a>
-                    <a href="#" class="font-bold text-slate-400">Pricing</a>
-                    <a href="#" class="font-bold text-slate-400">Resources</a>
+                <div class="flex items-center">
+                    <img src="./assets/images/shortly/logo.svg" alt="Shortly" />
                 </div>
-                <div class="flex flex-col justify-between items-center md:flex-row">
-                    <a href="#" class="font-bold text-slate-400">Login</a>
+                <div
+                    class="col-span-3 flex flex-col items-center space-x-6 md:flex-row"
+                >
                     <a
                         href="#"
-                        class="rounded-full bg-cyan-btn px-8 py-3 font-bold text-white duration-500 hover:bg-cyan-500"
+                        class="font-bold text-slate-400 hover:text-slate-900"
+                        >Features</a
+                    >
+                    <a
+                        href="#"
+                        class="font-bold text-slate-400 hover:text-slate-900"
+                        >Pricing</a
+                    >
+                    <a
+                        href="#"
+                        class="font-bold text-slate-400 hover:text-slate-900"
+                        >Resources</a
+                    >
+                </div>
+                <div
+                    class="flex flex-col items-center justify-between md:flex-row"
+                >
+                    <a
+                        href="#"
+                        class="font-bold text-slate-400 hover:text-slate-900"
+                        >Login</a
+                    >
+                    <a
+                        href="#"
+                        class="rounded-full bg-cyan-btn px-8 py-3 font-bold text-white duration-500 hover:bg-cyan-300"
                         >Sign up</a
                     >
                 </div>
             </header>
-            <div class="grid grid-cols-2 items-center mt-20 mb-24">
-                <div class="text-left space-y-8 ">
-                    <h2 class="font-bold text-6xl">More than just shorter links</h2>
-                    <p class="text-base text-gray-400 max-w-[380px]">
+            <div class="mt-20 mb-24 grid grid-cols-2 items-center">
+                <div class="space-y-8 text-left">
+                    <h2 class="text-6xl font-bold">
+                        More than just shorter links
+                    </h2>
+                    <p class="max-w-[380px] text-base text-gray-400">
                         Build your brand's recognition and get detailed insights
                         on how your links are performing
                     </p>
                     <button
-                        class="rounded-full bg-cyan-btn px-10 py-4 font-bold text-white duration-500 hover:bg-cyan-500"
+                        class="rounded-full bg-cyan-btn px-10 py-4 font-bold text-white duration-500 hover:bg-cyan-300"
                     >
                         Get Stared
                     </button>
@@ -76,7 +100,7 @@
                             placeholder="Shorten a link here"
                         />
                         <button
-                            class="rounded-lg bg-cyan-btn px-10 py-4 font-bold text-white duration-500 hover:bg-cyan-500"
+                            class="rounded-lg bg-cyan-btn px-10 py-4 font-bold text-white duration-500 hover:bg-cyan-300"
                         >
                             Shorten It!
                         </button>
@@ -84,7 +108,7 @@
                 </form>
             </div>
 
-            <div class="mx-auto mt-28 mb-20 max-w-[400px] space-y-6">
+            <div class="mx-auto my-20 max-w-[400px] space-y-6 md:mt-28">
                 <h3 class="text-4xl font-bold text-black">
                     Advanced Statistics
                 </h3>
@@ -94,38 +118,67 @@
                 </p>
             </div>
 
-            <div class="my-36 grid grid-cols-3 gap-8">
-                <div class="bg-white p-10">
-                    <img
-                        src="./assets/images/shortly/icon-brand-recognition.svg"
-                        alt="Brand Recognition"
-                    />
-                    <h4 class="text-bold text-black">Brand Recognition</h4>
-                    <p class="text-gray-500">
+            <div
+                class="md:mt-30 my-20 flex flex-col items-center md:mb-36 md:flex-row md:space-x-8 md:text-left"
+            >
+                <div
+                    class="relative max-w-[300px] space-y-6 rounded-lg bg-white py-10 pl-6 pr-8"
+                >
+                    <div
+                        class="mx-auto flex h-[80px] w-[80px] items-center rounded-full bg-slate-900 text-center md:absolute md:-top-[40px]"
+                    >
+                        <img
+                            class="mx-auto text-center"
+                            src="./assets/images/shortly/icon-brand-recognition.svg"
+                            alt="Brand Recognition"
+                        />
+                    </div>
+                    <h4 class="text-xl font-bold text-black">
+                        Brand Recognition
+                    </h4>
+                    <p class="text-gray-400">
                         Boost your brand recognition with each click. Generic
                         links don't mean a thing. Branded links help instill
                         confidence in your content.
                     </p>
                 </div>
-                <div class="bg-white p-10">
-                    <img
-                        src="./assets/images/shortly/icon-detailed-records.svg"
-                        alt="Detailed Records"
-                    />
-                    <h4 class="text-bold text-black">Detailed Records</h4>
-                    <p class="text-gray-500">
+                <div
+                    class="relative mt-10 max-w-[300px] space-y-6 rounded-lg bg-white py-10 pl-6 pr-8"
+                >
+                    <div
+                        class="mx-auto flex h-[80px] w-[80px] items-center rounded-full bg-slate-900 text-center md:absolute md:-top-[40px]"
+                    >
+                        <img
+                            class="mx-auto text-center"
+                            src="./assets/images/shortly/icon-detailed-records.svg"
+                            alt="Detailed Records"
+                        />
+                    </div>
+                    <h4 class="text-xl font-bold text-black">
+                        Detailed Records
+                    </h4>
+                    <p class="text-gray-400">
                         Boost your brand recognition with each click. Generic
                         links don't mean a thing. Branded links help instill
                         confidence in your content.
                     </p>
                 </div>
-                <div class="bg-white p-10">
-                    <img
-                        src="./assets/images/shortly/icon-fully-customizable.svg"
-                        alt="Fully Customizable"
-                    />
-                    <h4 class="text-bold text-black">Fully Customizable</h4>
-                    <p class="text-gray-500">
+                <div
+                    class="relative mt-10 max-w-[300px] space-y-6 rounded-lg bg-white py-10 pl-6 pr-8 md:mt-20"
+                >
+                    <div
+                        class="mx-auto flex h-[80px] w-[80px] items-center rounded-full bg-slate-900 text-center md:absolute md:-top-[40px]"
+                    >
+                        <img
+                            class="mx-auto text-center"
+                            src="./assets/images/shortly/icon-fully-customizable.svg"
+                            alt="Fully Customizable"
+                        />
+                    </div>
+                    <h4 class="text-xl font-bold text-black">
+                        Fully Customizable
+                    </h4>
+                    <p class="text-gray-400">
                         Boost your brand recognition with each click. Generic
                         links don't mean a thing. Branded links help instill
                         confidence in your content.
@@ -141,14 +194,14 @@
                 Boost your links today
             </h3>
             <button
-                class="rounded-full bg-cyan-btn px-10 py-3 font-bold text-white duration-500 hover:bg-cyan-500"
+                class="rounded-full bg-cyan-btn px-10 py-3 font-bold text-white duration-500 hover:bg-cyan-300"
             >
                 Get Stared
             </button>
         </div>
 
         <footer class="bg-zinc-800 py-14">
-            <div class="mx-auto grid max-w-custom grid-cols-4">
+            <div class="mx-auto grid max-w-custom grid-cols-1 md:grid-cols-4">
                 <div class="">
                     <img
                         src="./assets/images/shortly/logo.svg"
@@ -159,7 +212,7 @@
                 <div
                     class="col-span-2 my-10 grid grid-cols-1 gap-y-3 text-center text-white md:my-0 md:grid-cols-3 md:gap-x-14 md:text-left"
                 >
-                    <div class="flex flex-col space-y-2">
+                    <div class="mb-10 flex flex-col space-y-2 md:mb-0">
                         <h3 class="mb-4 font-bold">Features</h3>
                         <a href="#" class="text-gray-500 hover:text-cyan-500"
                             >Link Shortening</a
@@ -171,7 +224,7 @@
                             >Analytics</a
                         >
                     </div>
-                    <div class="flex flex-col space-y-2">
+                    <div class="mb-10 flex flex-col space-y-2 md:mb-0">
                         <h3 class="mb-4 font-bold">Resource</h3>
                         <a href="#" class="text-gray-500 hover:text-cyan-500"
                             >Blog</a
@@ -183,7 +236,7 @@
                             >Support</a
                         >
                     </div>
-                    <div class="flex flex-col space-y-2">
+                    <div class="mb-10 flex flex-col space-y-2 md:mb-0">
                         <h3 class="mb-4 font-bold">Company</h3>
                         <a href="#" class="text-gray-500 hover:text-cyan-500"
                             >About</a
@@ -199,7 +252,7 @@
                         >
                     </div>
                 </div>
-                <div class="flex flex-row space-x-5">
+                <div class="mx-auto flex flex-row space-x-5 text-center">
                     <i
                         class="fa-brands fa-square-facebook text-2xl text-white hover:text-cyan-900"
                     ></i>

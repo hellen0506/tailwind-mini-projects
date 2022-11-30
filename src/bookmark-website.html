@@ -1,135 +1,252 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Bookmark Website</title>
-    <link
-    rel="shortcut icon"
-    href="./assets/favicon.ico"
-    type="image/x-icon"
-/>
-    <link href="./css/style.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-    </style>
-</head>
-<body class="font-baijam bg-black">
-<div class="container mx-auto max-w-[1220px] pt-12 text-center bg-white bg-clipboard-header-mb bg-no-repeat bg-top sm:bg-clipboard-header-dt">
-    <header class="mt-20 mb-xl">
-        <img class="mx-auto" src="./assets/images/clipboard/logo.svg" alt="Clipboard">
-        <div class="clipboard-box mt-16 ">
-            <h3 class="h3-heading">A history of everything you copy</h3>
-            <p class="description">Clipboard allows you to track and organize everything you copy.<br>
-                Instantly access your clipboard on all your devices</p>
-            <div class="md:space-x-2">
-                <button class="w-full mb-5 btn bg-teal-500 hover:bg-teal-400 md:w-auto md:mb-0">Download for iOS
-                </button>
-                <button class="w-full btn bg-indigo-500 hover:bg-indigo-400 md:w-auto">Download for Mac</button>
-            </div>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookmark Website</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.ico"
+            type="image/x-icon"
+        />
+        <link href="./css/style.css" rel="stylesheet" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        </style>
+    </head>
+    <body class="bg-black font-baijam">
+        <div
+            class="container mx-auto max-w-[1220px] bg-white bg-clipboard-header-mb bg-top bg-no-repeat pt-12 text-center sm:bg-clipboard-header-dt"
+        >
+            <header class="mb-xl mt-20">
+                <img
+                    class="mx-auto"
+                    src="./assets/images/clipboard/logo.svg"
+                    alt="Clipboard"
+                />
+                <div class="clipboard-box mt-16">
+                    <h3 class="h3-heading">A history of everything you copy</h3>
+                    <p class="description">
+                        Clipboard allows you to track and organize everything
+                        you copy.<br />
+                        Instantly access your clipboard on all your devices
+                    </p>
+                    <div class="md:space-x-2">
+                        <button
+                            class="btn mb-5 w-full bg-teal-500 hover:bg-teal-400 md:mb-0 md:w-auto"
+                        >
+                            Download for iOS
+                        </button>
+                        <button
+                            class="btn w-full bg-indigo-500 hover:bg-indigo-400 md:w-auto"
+                        >
+                            Download for Mac
+                        </button>
+                    </div>
+                </div>
+            </header>
 
-    <div class="clipboard-box">
-        <h3 class="h3-heading">Kepp track of your snippets</h3>
-        <p class="description">Clipboard instantly stores any item you copy in the cloud, meaning you can access your
-            snippets immediately on all your devices.
-            Our Mac and iOS apps will help you organize everything </p>
-    </div>
+            <div class="clipboard-box">
+                <h3 class="h3-heading">Kepp track of your snippets</h3>
+                <p class="description">
+                    Clipboard instantly stores any item you copy in the cloud,
+                    meaning you can access your snippets immediately on all your
+                    devices. Our Mac and iOS apps will help you organize
+                    everything
+                </p>
+            </div>
 
-    <div class="grid grid-cols-1 my-20 md:grid-cols-4 md:my-32">
-        <div class="px-14 md:px-0 md:col-start-1 md:col-span-2">
-            <img class="md:object-cover md:object-right md:w-[720px] md:h-[572px]"
-                 src="./assets/images/clipboard/image-computer.png" alt="Computer"/>
-        </div>
-        <div class="max-w-sm text-center mx-auto mt-14 md:text-left md:col-start-3 md:col-span-2 md:mx-0 md:mt-10 md:ml-32">
-            <div class="space-y-2 mb-14">
-                <h4 class="h4-heading">Quick Search</h4>
-                <p class="description text-xl">Easily search your snippets by content, category, web address,
-                    application, and more.</p>
+            <div class="my-20 grid grid-cols-1 md:my-32 md:grid-cols-4">
+                <div class="px-14 md:col-span-2 md:col-start-1 md:px-0">
+                    <img
+                        class="md:h-[572px] md:w-[720px] md:object-cover md:object-right"
+                        src="./assets/images/clipboard/image-computer.png"
+                        alt="Computer"
+                    />
+                </div>
+                <div
+                    class="mx-auto mt-14 max-w-sm text-center md:col-span-2 md:col-start-3 md:mx-0 md:mt-10 md:ml-32 md:text-left"
+                >
+                    <div class="mb-14 space-y-2">
+                        <h4 class="h4-heading">Quick Search</h4>
+                        <p class="description text-xl">
+                            Easily search your snippets by content, category,
+                            web address, application, and more.
+                        </p>
+                    </div>
+                    <div class="mb-14 space-y-2">
+                        <h4 class="h4-heading">iCloud Sync</h4>
+                        <p class="description text-xl">
+                            Instantly saves and syncs snippets across all your
+                            devices.
+                        </p>
+                    </div>
+                    <div class="mb-14 space-y-2">
+                        <h4 class="h4-heading">Completely History</h4>
+                        <p class="description text-xl">
+                            Retrieve any snippets from the first moment you
+                            started using the app.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="space-y-2 mb-14">
-                <h4 class="h4-heading">iCloud Sync</h4>
-                <p class="description text-xl">Instantly saves and syncs snippets across all your devices.</>
+            <div>
+                <div class="clipboard-box">
+                    <h3 class="h3-heading">Access Clipboard anywhere</h3>
+                    <p class="description">
+                        Whether you're on the go, or at your computer, you can
+                        access all your Clipboard snippets in a few simp clicks.
+                    </p>
+                </div>
+                <div>
+                    <img
+                        class="mx-auto"
+                        src="./assets/images/clipboard/image-devices.png"
+                        alt="Devices"
+                    />
+                </div>
+                <div class="clipboard-box">
+                    <h3 class="h3-heading">Supercharge your workflow</h3>
+                    <p class="description">
+                        We've got the tools to boost your productivity.
+                    </p>
+                </div>
             </div>
-            <div class="space-y-2 mb-14">
-                <h4 class="h4-heading">Completely History</h4>
-                <p class="description text-xl">Retrieve any snippets from the first moment you started using the
-                    app.</p>
+            <div
+                class="flex flex-col items-center justify-around space-y-10 md:flex-row md:space-y-0"
+            >
+                <div class="group space-y-6">
+                    <img
+                        class="mx-auto"
+                        src="./assets/images/clipboard/icon-blacklist.svg"
+                        alt="black list"
+                    />
+                    <h5 class="h5-heading">Create blacklists</h5>
+                    <p class="description max-w-xs text-base">
+                        Easily search your snippets by content, category, web
+                        address, application, and more.
+                    </p>
+                </div>
+                <div class="group space-y-6">
+                    <img
+                        class="mx-auto"
+                        src="./assets/images/clipboard/icon-text.svg"
+                        alt="snippets"
+                    />
+                    <h5 class="h5-heading">Plain text snippets</h5>
+                    <p class="description max-w-xs text-base">
+                        Remove unwanted formatting from copied text for a
+                        consistent look.
+                    </p>
+                </div>
+                <div class="group space-y-6">
+                    <img
+                        class="mx-auto"
+                        src="./assets/images/clipboard/icon-preview.svg"
+                        alt="Sneak"
+                    />
+                    <h5 class="h5-heading">Sneak preview</h5>
+                    <p class="description max-w-xs text-base">
+                        Quick preview of all snippets on your Clipboard for easy
+                        access.
+                    </p>
+                </div>
             </div>
-        </div>
-    </div>
-    <div>
-        <div class="clipboard-box">
-            <h3 class="h3-heading">Access Clipboard anywhere</h3>
-            <p class="description">Whether you're on the go, or at your computer, you can access all your Clipboard
-                snippets
-                in a few simp clicks.</p>
-        </div>
-        <div>
-            <img class="mx-auto" src="./assets/images/clipboard/image-devices.png" alt="Devices"/>
-        </div>
-        <div class="clipboard-box">
-            <h3 class="h3-heading">Supercharge your workflow</h3>
-            <p class="description">We've got the tools to boost your productivity.</p>
-        </div>
-    </div>
-    <div class="flex flex-col space-y-10 items-center justify-around  md:flex-row md:space-y-0 ">
-        <div class="group space-y-6">
-            <img class="mx-auto" src="./assets/images/clipboard/icon-blacklist.svg" alt="black list"/>
-            <h5 class="h5-heading">Create blacklists</h5>
-            <p class="description text-base max-w-xs">Easily search your snippets by content, category, web address,
-                application, and more.</p>
-        </div>
-        <div class="group space-y-6">
-            <img class="mx-auto" src="./assets/images/clipboard/icon-text.svg" alt="snippets"/>
-            <h5 class="h5-heading">Plain text snippets</h5>
-            <p class="description text-base max-w-xs">Remove unwanted formatting from copied text for a consistent
-                look.</p>
-        </div>
-        <div class="group space-y-6">
-            <img class="mx-auto"
-             src="./assets/images/clipboard/icon-preview.svg" alt="Sneak"/>
-            <h5 class="h5-heading">Sneak preview</h5>
-            <p class="description text-base max-w-xs">Quick preview of all snippets on your Clipboard for easy
-                access.</p>
-        </div>
-    </div>
-    <div class="flex flex-col my-24 space-y-14 items-center justify-around text-center md:space-y-0 md:flex-row md:my-36">
-        <img src="./assets/images/clipboard/logo-google.png" alt="Google"/>
-        <img src="./assets/images/clipboard/logo-ibm.png" alt="IBM"/>
-        <img src="./assets/images/clipboard/logo-microsoft.png" alt="Microsoft"/>
-        <img src="./assets/images/clipboard/logo-hp.png" alt="Hewlett Packard Enterprise"/>
-        <img src="./assets/images/clipboard/logo-vector-graphics.png" alt="Vector Graphics"/>
-    </div>
+            <div
+                class="my-24 flex flex-col items-center justify-around space-y-14 text-center md:my-36 md:flex-row md:space-y-0"
+            >
+                <img
+                    src="./assets/images/clipboard/logo-google.png"
+                    alt="Google"
+                />
+                <img src="./assets/images/clipboard/logo-ibm.png" alt="IBM" />
+                <img
+                    src="./assets/images/clipboard/logo-microsoft.png"
+                    alt="Microsoft"
+                />
+                <img
+                    src="./assets/images/clipboard/logo-hp.png"
+                    alt="Hewlett Packard Enterprise"
+                />
+                <img
+                    src="./assets/images/clipboard/logo-vector-graphics.png"
+                    alt="Vector Graphics"
+                />
+            </div>
 
-    <section class="clipboard-box">
-        <h3 class="h3-heading">Clipboard for iOS and Mac OS</h3>
-        <p class="description">Available for free on the App Store. Download for Mac or iOS, sync
-            with iCloud and you're ready to start adding to your clipboard.</p>
-        <div class="md:space-x-2">
-            <button class="w-full mb-5 btn bg-teal-500 hover:bg-teal-400 md:w-auto md:mb-0">Download for iOS</button>
-            <button class="w-full btn bg-indigo-500 hover:bg-indigo-400 md:w-auto">Download for Mac</button>
-        </div>
-    </section>
+            <section class="clipboard-box">
+                <h3 class="h3-heading">Clipboard for iOS and Mac OS</h3>
+                <p class="description">
+                    Available for free on the App Store. Download for Mac or
+                    iOS, sync with iCloud and you're ready to start adding to
+                    your clipboard.
+                </p>
+                <div class="md:space-x-2">
+                    <button
+                        class="btn mb-5 w-full bg-teal-500 hover:bg-teal-400 md:mb-0 md:w-auto"
+                    >
+                        Download for iOS
+                    </button>
+                    <button
+                        class="btn w-full bg-indigo-500 hover:bg-indigo-400 md:w-auto"
+                    >
+                        Download for Mac
+                    </button>
+                </div>
+            </section>
 
-    <footer class="flex flex-col items-center justify-around bg-slate-50 px-6 py-10 md:flex-row md:py-6">
-        <div class="flex flex-col md:flex-row md:space-x-32">
-            <div><img src="./assets/images/clipboard/logo.svg" alt="Clipboard" class="w-16 mx-auto"></div>
-            <div class="grid grid-cols-1 gap-y-3 my-10 text-center md:grid-cols-3 md:gap-x-14 md:my-0  md:text-left">
-                <a href="#" class="text-slate-400 hover:text-teal-500">FAQs</a>
-                <a href="#" class="text-slate-400 hover:text-teal-500">Privacy Policy</a>
-                <a href="#" class="text-slate-400 hover:text-teal-500">Install Quide</a>
-                <a href="#" class="text-slate-400 hover:text-teal-500">Contact Us</a>
-                <a href="#" class="text-slate-400 hover:text-teal-500">Press Kit</a>
-            </div>
+            <footer
+                class="flex flex-col items-center justify-around bg-slate-50 px-6 py-10 md:flex-row md:py-6"
+            >
+                <div class="flex flex-col md:flex-row md:space-x-32">
+                    <div>
+                        <img
+                            src="./assets/images/clipboard/logo.svg"
+                            alt="Clipboard"
+                            class="mx-auto w-16"
+                        />
+                    </div>
+                    <div
+                        class="my-10 grid grid-cols-1 gap-y-3 text-center md:my-0 md:grid-cols-3 md:gap-x-14 md:text-left"
+                    >
+                        <a href="#" class="text-slate-400 hover:text-teal-500"
+                            >FAQs</a
+                        >
+                        <a href="#" class="text-slate-400 hover:text-teal-500"
+                            >Privacy Policy</a
+                        >
+                        <a href="#" class="text-slate-400 hover:text-teal-500"
+                            >Install Quide</a
+                        >
+                        <a href="#" class="text-slate-400 hover:text-teal-500"
+                            >Contact Us</a
+                        >
+                        <a href="#" class="text-slate-400 hover:text-teal-500"
+                            >Press Kit</a
+                        >
+                    </div>
+                </div>
+                <div class="flex flex-row space-x-6">
+                    <span
+                        ><img
+                            src="./assets/images/clipboard/icon-facebook.svg"
+                            alt="Facebook"
+                            class="hover:bg-teal-500"
+                    /></span>
+                    <span
+                        ><img
+                            src="./assets/images/clipboard/icon-twitter.svg"
+                            alt="Twitter"
+                            class="hover:bg-teal-500"
+                    /></span>
+                    <span
+                        ><img
+                            src="./assets/images/clipboard/icon-instagram.svg"
+                            alt="Instagram"
+                            class="hover:bg-teal-500"
+                    /></span>
+                </div>
+            </footer>
         </div>
-        <div class="flex flex-row space-x-6">
-            <span><img src="./assets/images/clipboard/icon-facebook.svg" alt="Facebook" class="hover:bg-teal-500"></span>
-            <span><img src="./assets/images/clipboard/icon-twitter.svg" alt="Twitter" class="hover:bg-teal-500"></span>
-            <span><img src="./assets/images/clipboard/icon-instagram.svg" alt="Instagram" class="hover:bg-teal-500"></span>
-        </div>
-    </footer>
-</div>
-</body>
+    </body>
 </html>
