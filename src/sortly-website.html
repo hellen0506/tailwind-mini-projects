@@ -9,12 +9,6 @@
             type="image/x-icon"
         />
         <title>Sortly Website</title>
-        <link
-            rel="shortcut icon"
-            href="./assets/favicon.ico"
-            type="image/x-icon"
-        />
-        <link rel="stylesheet" href="css/style.css" />
         <link href="./css/style.css" rel="stylesheet" />
         <link
             rel="stylesheet"
@@ -23,53 +17,103 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
         </style>
+        <script src="https:////unpkg.com/alpinejs" defer></script>
+        <script src="./assets/js/main.js"></script>
     </head>
     <body class="bg-gray-100/50 font-poppins">
-        <div class="mx-auto max-w-[940px] pt-8 text-center">
-            <header class="mx-auto grid grid-cols-5 gap-4">
+        <div class="mx-auto max-w-[1020px] px-8 pt-8 text-center">
+            <header class="mx-auto grid grid-cols-3 md:grid-cols-5 md:gap-x-4">
                 <div class="flex items-center">
                     <img src="./assets/images/shortly/logo.svg" alt="Shortly" />
                 </div>
-                <div
-                    class="col-span-3 flex flex-col items-center space-x-6 md:flex-row"
-                >
-                    <a
-                        href="#"
-                        class="font-bold text-slate-400 hover:text-slate-900"
-                        >Features</a
+                <div class="col-span-4 hidden flex-row justify-between md:flex">
+                    <div class="flex flex-row items-center space-x-6">
+                        <a
+                            href="#"
+                            class="font-bold text-slate-400 hover:text-slate-900"
+                            >Features</a
+                        >
+                        <a
+                            href="#"
+                            class="font-bold text-slate-400 hover:text-slate-900"
+                            >Pricing</a
+                        >
+                        <a
+                            href="#"
+                            class="font-bold text-slate-400 hover:text-slate-900"
+                            >Resources</a
+                        >
+                    </div>
+                    <div
+                        class="flex flex-row items-center justify-between space-x-6"
                     >
-                    <a
-                        href="#"
-                        class="font-bold text-slate-400 hover:text-slate-900"
-                        >Pricing</a
-                    >
-                    <a
-                        href="#"
-                        class="font-bold text-slate-400 hover:text-slate-900"
-                        >Resources</a
-                    >
+                        <a
+                            href="#"
+                            class="font-bold text-slate-400 hover:text-slate-900"
+                            >Login</a
+                        >
+                        <a
+                            href="#"
+                            class="rounded-full bg-cyan-btn px-8 py-3 font-bold text-white duration-500 hover:bg-cyan-300"
+                            >Sign up</a
+                        >
+                    </div>
                 </div>
+
                 <div
-                    class="flex flex-col items-center justify-between md:flex-row"
+                    x-data="{ open: false }"
+                    class="relative col-span-2 text-right md:hidden"
                 >
-                    <a
-                        href="#"
-                        class="font-bold text-slate-400 hover:text-slate-900"
-                        >Login</a
+                    <button x-on:click="open = ! open">
+                        <i
+                            class="fa-solid fa-bars text-3xl hover:text-cyan-900"
+                        ></i>
+                    </button>
+
+                    <div
+                        x-show="open"
+                        class="top-o absolute right-0 flex w-full flex-col space-y-6 rounded-lg bg-boots p-10 text-center"
                     >
-                    <a
-                        href="#"
-                        class="rounded-full bg-cyan-btn px-8 py-3 font-bold text-white duration-500 hover:bg-cyan-300"
-                        >Sign up</a
-                    >
+                        <a
+                            href="#"
+                            class="font-bold text-slate-400 hover:text-slate-900"
+                            >Features</a
+                        >
+                        <a
+                            href="#"
+                            class="font-bold text-slate-400 hover:text-slate-900"
+                            >Pricing</a
+                        >
+                        <a
+                            href="#"
+                            class="font-bold text-slate-400 hover:text-slate-900"
+                            >Resources</a
+                        >
+                        <a
+                            href="#"
+                            class="border-t border-slate-400 pt-6 font-bold text-slate-400 hover:text-slate-900"
+                            >Login</a
+                        >
+                        <a
+                            href="#"
+                            class="rounded-full bg-cyan-btn px-8 py-3 font-bold text-white duration-500 hover:bg-cyan-300"
+                            >Sign up</a
+                        >
+                    </div>
                 </div>
             </header>
-            <div class="mt-20 mb-24 grid grid-cols-2 items-center">
-                <div class="space-y-8 text-left">
+            <div
+                class="my-14 flex flex-col items-center justify-between md:my-24 md:flex-row"
+            >
+                <div
+                    class="order-2 space-y-8 text-center md:order-1 md:text-left"
+                >
                     <h2 class="text-6xl font-bold">
                         More than just shorter links
                     </h2>
-                    <p class="max-w-[380px] text-base text-gray-400">
+                    <p
+                        class="mx-auto max-w-[380px] text-xl text-gray-400 md:mx-0 md:text-base"
+                    >
                         Build your brand's recognition and get detailed insights
                         on how your links are performing
                     </p>
@@ -79,7 +123,7 @@
                         Get Stared
                     </button>
                 </div>
-                <div class="text-right">
+                <div class="order-1 mb-20 text-right md:order-2 md:mb-0">
                     <img
                         src="./assets/images/shortly/illustration-working.svg"
                         alt="Illustration"
@@ -87,25 +131,92 @@
                 </div>
             </div>
 
-            <div>
-                <form
-                    class="mx-auto max-w-[850px] rounded-lg bg-boots p-10"
-                    action="post"
+            <form
+                class="mx-auto max-w-[850px] rounded-lg bg-boots p-10"
+                id="form-shortlink"
+                x-data
+                x-validate
+                @submit="$validate.submit"
+            >
+                <fieldset
+                    class="grid grid-cols-1 gap-y-3 md:grid-cols-4 md:gap-x-4"
                 >
-                    <fieldset class="grid grid-cols-4 gap-4">
-                        <input
-                            class="col-span-3 rounded-lg px-4 text-orange-300 placeholder:text-orange-300"
-                            type="text"
-                            value=""
-                            placeholder="Shorten a link here"
-                        />
+                    <input
+                        class="col-span-3 rounded-lg px-4 py-4 text-orange-300 placeholder:text-orange-300 focus:outline-none focus:ring focus:ring-cyan-300"
+                        required
+                        id="input-url"
+                        oninput="isValidHttpUrl(this.value)"
+                        onkeydown="isValidHttpUrl(this.value)"
+                        placeholder="Shorten a link here"
+                    />
+                    <button
+                        class="rounded-lg bg-cyan-btn px-10 py-4 font-bold text-white duration-500 hover:bg-cyan-300"
+                        type="submit"
+                        value="submit"
+                    >
+                        Shorten It!
+                    </button>
+                </fieldset>
+            </form>
+
+            <div class="mx-auto mt-8 max-w-[850px]">
+                <div
+                    class="mx-auto mb-8 flex max-w-[850px] flex-col items-center justify-between rounded-lg bg-white p-6 shadow-lg md:flex-row"
+                >
+                    <p
+                        class="mb-4 inline-block max-w-full overflow-x-scroll font-bold md:mb-0"
+                    >
+                        https://www.frontendmentor.io
+                    </p>
+                    <div class="flex flex-col items-center md:flex-row">
+                        <p class="mr-4 mb-4 font-bold text-[#2ACFCF] md:mb-0">
+                            https://rel.ink/k4lKyk
+                        </p>
                         <button
-                            class="rounded-lg bg-cyan-btn px-10 py-4 font-bold text-white duration-500 hover:bg-cyan-300"
+                            class="rounded-lg bg-cyan-btn px-8 py-2 text-white duration-500 hover:bg-cyan-300 hover:bg-boots"
                         >
-                            Shorten It!
+                            Copy
                         </button>
-                    </fieldset>
-                </form>
+                    </div>
+                </div>
+                <div
+                    class="mx-auto mb-8 flex max-w-[850px] flex-col items-center justify-between rounded-lg bg-white p-6 shadow-lg md:flex-row"
+                >
+                    <p
+                        class="mb-4 inline-block max-w-full overflow-x-scroll font-bold md:mb-0"
+                    >
+                        https://twitter.com/frontendmentor
+                    </p>
+                    <div class="flex flex-col items-center md:flex-row">
+                        <p class="mr-4 mb-4 font-bold text-[#2ACFCF] md:mb-0">
+                            https://rel.ink/gxOXp9
+                        </p>
+                        <button
+                            class="rounded-lg bg-cyan-btn px-8 py-2 text-white duration-500 hover:bg-cyan-300 hover:bg-boots"
+                        >
+                            Copy
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="mx-auto mb-8 flex max-w-[850px] flex-col items-center justify-between rounded-lg bg-white p-6 shadow-lg md:flex-row"
+                >
+                    <p
+                        class="mb-4 inline-block max-w-full overflow-x-scroll font-bold md:mb-0"
+                    >
+                        https://www.linkedin.com/company/frontend-mentor
+                    </p>
+                    <div class="flex flex-col items-center md:flex-row">
+                        <p class="mr-4 mb-4 font-bold text-[#2ACFCF] md:mb-0">
+                            https://rel.ink/gob3X9
+                        </p>
+                        <button
+                            class="rounded-lg bg-cyan-btn px-8 py-2 text-white duration-500 hover:bg-cyan-300 hover:bg-boots"
+                        >
+                            Copy
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <div class="mx-auto my-20 max-w-[400px] space-y-6 md:mt-28">
