@@ -42,7 +42,14 @@
 
     /*Clipboard Website*/
     .btn {
-        @apply mx-auto w-auto rounded-full px-8 py-4 text-xl text-white shadow-xl duration-300  hover:ring-opacity-75;
+        @apply rounded-full px-8 py-4 text-xl text-white duration-300  hover:ring-opacity-75;
+    }
+
+    .btn-clipboard {
+        @apply mx-auto w-auto shadow-xl;
+    }
+    .btn-shortly {
+        @apply rounded-lg bg-cyan-btn py-2 hover:bg-cyan-300 hover:bg-boots;
     }
 
     .h3-heading {
