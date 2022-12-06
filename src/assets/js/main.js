@@ -1,6 +1,6 @@
 console.log('Application running.');
 
-const formShortLink = document.querySelector('#form-short-link');
+const formShortLink = document.querySelector('#form-shortlink');
 const inputURL = document.querySelector('#input-url');
 const errorMess = document.querySelector('#error-valid');
 if (formShortLink) {

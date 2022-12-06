@@ -8,6 +8,7 @@ module.exports = {
       barlow: ['Barlow Condensed', 'sans-serif'],
       baijam: ['Bai Jamjuree', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
+      rubik: ['Rubik', 'sans-serif'],
     },
     extend: {
       backgroundColor:{
@@ -23,6 +24,7 @@ module.exports = {
       },
       maxWidth: {
         'custom': '1220px',
+        
       },
       colors: {
         'purple-light': '#829b9a',
