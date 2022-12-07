@@ -24,6 +24,7 @@ module.exports = {
       },
       maxWidth: {
         'custom': '1220px',
+        'md': '1400px',       
         
       },
       colors: {

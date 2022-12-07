@@ -21,7 +21,7 @@
         <script src="./assets/js/main.js"></script>
     </head>
     <body class="bg-gray-100/50 font-rubik">
-        <div class="mx-auto mb-16 max-w-[1400px] px-8 pt-8 text-center">
+        <div class="mx-auto mb-16 max-w-md px-8 pt-8 text-center">
             <header
                 class="mx-auto flex items-center justify-between md:flex-row"
             >
@@ -38,7 +38,7 @@
                         <a href="#" class="links-bm">FAQ</a>
                         <a
                             href="#"
-                            class="btn btn-red rounded-sm py-[5px] text-sm uppercase"
+                            class="btn btn-red rounded-sm px-5 py-2 text-sm uppercase"
                             >Login</a
                         >
                     </div>
@@ -46,7 +46,7 @@
 
                 <div
                     x-data="{ open: false }"
-                    class="relative w-[50%] text-right md:hidden"
+                    class="relative z-10 w-[50%] text-right md:hidden"
                 >
                     <button x-on:click="open = ! open">
                         <i
@@ -66,133 +66,154 @@
                 </div>
             </header>
         </div>
-
-        <div
-            class="mx-auto flex max-w-[1400px] flex-col items-center justify-between px-8 md:flex-row"
-        >
-            <div class="max-w-xl space-y-6 text-center md:text-left">
-                <h1 class="text-5xl font-bold md:text-6xl">
-                    A simple Bookmark Manager
-                </h1>
-                <p class="mx-auto max-w-[350px] text-lg text-gray-400 md:mx-0">
-                    A clean and simple interface to organize your favourite
-                    website. Open a new browser tab and see your sites load
-                    instantly. Try it for free.
-                </p>
-                <div class="space-x-2 pt-4">
-                    <a
-                        href="#"
-                        class="btn-bm btn-indigo rounded-sm border px-2 py-2 text-sm font-semibold"
-                        >Get It On Chrome</a
+        <div class="relative">
+            <div
+                class="mx-auto flex max-w-md flex-col items-center justify-between px-8 md:flex-row"
+            >
+                <div class="max-w-xl space-y-6 text-center md:text-left">
+                    <h1 class="text-5xl font-bold md:text-6xl">
+                        A simple Bookmark Manager
+                    </h1>
+                    <p
+                        class="mx-auto max-w-[350px] text-lg text-gray-400 md:mx-0"
                     >
-                    <a
-                        href="#"
-                        class="btn-bm rounded-sm border border-gray-300 bg-gray-300 px-2 py-2 text-sm font-semibold text-black hover:bg-white"
-                        >Get It On Firefox</a
-                    >
+                        A clean and simple interface to organize your favourite
+                        website. Open a new browser tab and see your sites load
+                        instantly. Try it for free.
+                    </p>
+                    <div class="space-x-2 pt-4">
+                        <a
+                            href="#"
+                            class="btn-bm btn-indigo rounded-sm border px-2 py-2 text-sm font-semibold"
+                            >Get It On Chrome</a
+                        >
+                        <a
+                            href="#"
+                            class="btn-bm rounded-sm border border-gray-300 bg-gray-300 px-2 py-2 text-sm font-semibold text-black hover:bg-white"
+                            >Get It On Firefox</a
+                        >
+                    </div>
+                </div>
+                <div class="mt-10 md:mt-0">
+                    <img
+                        src="./assets/images/bookmark/illustration-hero.svg"
+                        alt="Bookmark"
+                    />
+                    <div
+                        class="absolute right-0 bottom-0 -z-10 hidden h-72 w-2/5 rounded-tl-full rounded-bl-full bg-[#5368DF] lg:block"
+                    ></div>
                 </div>
             </div>
-            <div class="mt-10 md:mt-0">
-                <img
-                    src="./assets/images/bookmark/illustration-hero.svg"
-                    alt="Bookmark"
-                />
-            </div>
         </div>
-
-        <div
-            class="tab-wrapper mx-auto max-w-[1040px] px-8 pt-8 md:pt-20"
-            x-data="{ activeTab:  0 }"
-        >
+        <div class="relative">
             <div
-                class="mx-auto mb-10 grid max-w-[600px] grid-cols-3 items-center border-b border-gray-300"
+                class="tab-wrapper mx-auto max-w-md px-8 pt-8 md:pt-20"
+                x-data="{ activeTab:  0 }"
             >
-                <label
-                    @click="activeTab = 0"
-                    class="tab-control py-2 text-center hover:text-red-500"
-                    :class="{ 'active': activeTab === 0 } "
-                    >Simple Bookmarking</label
+                <div
+                    class="mx-auto mb-10 grid max-w-[600px] grid-cols-3 items-center border-b border-gray-300"
                 >
-                <label
-                    @click="activeTab = 1"
-                    class="tab-control py-2 text-center hover:text-red-500"
+                    <label
+                        @click="activeTab = 0"
+                        class="tab-control"
+                        :class="{ 'active': activeTab === 0 } "
+                        >Simple Bookmarking</label
+                    >
+                    <label
+                        @click="activeTab = 1"
+                        class="tab-control"
+                        :class="{ 'active': activeTab === 1 }"
+                        >Speedy Searching</label
+                    >
+                    <label
+                        @click="activeTab = 2"
+                        class="tab-control"
+                        :class="{ 'active': activeTab === 2 }"
+                        >Easy Sharing</label
+                    >
+                </div>
+
+                <div
+                    class="tab-panel"
+                    :class="{ 'active': activeTab === 0 }"
+                    x-show.transition.in.opacity.duration.600="activeTab === 0"
+                >
+                    <div class="mb-10 md:mb-0">
+                        <img
+                            src="./assets/images/bookmark/illustration-features-tab-1.svg"
+                            alt="Bookmark"
+                        />
+                        <div
+                            class="absolute left-0 -bottom-14 -z-10 hidden h-72 w-2/5 rounded-tr-full rounded-br-full bg-[#5368DF] lg:block"
+                        ></div>
+                    </div>
+                    <div class="space-y-8">
+                        <h4 class="text-3xl font-semibold">
+                            Simple Bookmarking
+                        </h4>
+                        <p class="max-w-sm text-gray-500">
+                            A clean and simple interface to organize your
+                            favourite website. Open a new browser tab and see
+                            your sites load instantly.
+                        </p>
+                        <a href="#" class="btn-bm btn-indigo">More Info</a>
+                    </div>
+                </div>
+                <div
+                    class="tab-panel"
                     :class="{ 'active': activeTab === 1 }"
-                    >Speedy Searching</label
+                    x-show.transition.in.opacity.duration.600="activeTab === 1"
                 >
-                <label
-                    @click="activeTab = 2"
-                    class="tab-control py-2 text-center hover:text-red-500"
+                    <div class="">
+                        <img
+                            src="./assets/images/bookmark/illustration-features-tab-2.svg"
+                            alt="Bookmark"
+                        />
+                        <div
+                            class="absolute left-0 -bottom-14 -z-10 hidden h-72 w-2/5 rounded-tr-full rounded-br-full bg-[#5368DF] lg:block"
+                        ></div>
+                    </div>
+                    <div class="space-y-8">
+                        <h4 class="text-3xl font-semibold">
+                            Intelligent Search
+                        </h4>
+                        <p class="max-w-sm text-gray-500">
+                            A clean and simple interface to organize your
+                            favourite website. Open a new browser tab and see
+                            your sites load instantly.
+                        </p>
+                        <a href="#" class="btn-bm btn-indigo">More Info</a>
+                    </div>
+                </div>
+                <div
+                    class="tab-panel"
                     :class="{ 'active': activeTab === 2 }"
-                    >Easy Sharing</label
+                    x-show.transition.in.opacity.duration.600="activeTab === 2"
                 >
-            </div>
-
-            <div
-                class="tab-panel"
-                :class="{ 'active': activeTab === 0 }"
-                x-show.transition.in.opacity.duration.600="activeTab === 0"
-            >
-                <div class="mb-10 md:mb-0">
-                    <img
-                        src="./assets/images/bookmark/illustration-features-tab-1.svg"
-                        alt="Bookmark"
-                    />
-                </div>
-                <div class="space-y-8">
-                    <h4 class="text-3xl font-semibold">Simple Bookmarking</h4>
-                    <p class="max-w-sm text-gray-500">
-                        A clean and simple interface to organize your favourite
-                        website. Open a new browser tab and see your sites load
-                        instantly.
-                    </p>
-                    <a href="#" class="btn-bm btn-indigo">More Info</a>
-                </div>
-            </div>
-            <div
-                class="tab-panel"
-                :class="{ 'active': activeTab === 1 }"
-                x-show.transition.in.opacity.duration.600="activeTab === 1"
-            >
-                <div class="">
-                    <img
-                        src="./assets/images/bookmark/illustration-features-tab-2.svg"
-                        alt="Bookmark"
-                    />
-                </div>
-                <div class="space-y-8">
-                    <h4 class="text-3xl font-semibold">Intelligent Search</h4>
-                    <p class="max-w-sm text-gray-500">
-                        A clean and simple interface to organize your favourite
-                        website. Open a new browser tab and see your sites load
-                        instantly.
-                    </p>
-                    <a href="#" class="btn-bm btn-indigo">More Info</a>
-                </div>
-            </div>
-            <div
-                class="tab-panel"
-                :class="{ 'active': activeTab === 2 }"
-                x-show.transition.in.opacity.duration.600="activeTab === 2"
-            >
-                <div class="">
-                    <img
-                        src="./assets/images/bookmark/illustration-features-tab-3.svg"
-                        alt="Bookmark"
-                    />
-                </div>
-                <div class="space-y-8">
-                    <h4 class="text-3xl font-semibold">Share your Bookmark</h4>
-                    <p class="max-w-sm text-gray-500">
-                        A clean and simple interface to organize your favourite
-                        website. Open a new browser tab and see your sites load
-                        instantly.
-                    </p>
-                    <a href="#" class="btn-bm btn-indigo">More Info</a>
+                    <div class="">
+                        <img
+                            src="./assets/images/bookmark/illustration-features-tab-3.svg"
+                            alt="Bookmark"
+                        />
+                        <div
+                            class="absolute left-0 -bottom-14 -z-10 hidden h-72 w-2/5 rounded-tr-full rounded-br-full bg-[#5368DF] lg:block"
+                        ></div>
+                    </div>
+                    <div class="space-y-8">
+                        <h4 class="text-3xl font-semibold">
+                            Share your Bookmark
+                        </h4>
+                        <p class="max-w-sm text-gray-500">
+                            A clean and simple interface to organize your
+                            favourite website. Open a new browser tab and see
+                            your sites load instantly.
+                        </p>
+                        <a href="#" class="btn-bm btn-indigo">More Info</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="mx-auto my-20 max-w-[1020px]">
+        <div class="mx-auto my-20 max-w-[1020px] px-6">
             <h3 class="text-center text-3xl font-semibold">
                 Download the extension
             </h3>
@@ -287,7 +308,8 @@
                             >
                                 <span> What is Bookmark? </span>
                                 <i
-                                    class="fa-sharp fa-solid fa-chevron-down"
+                                    class="fa-sharp fa-solid fa-chevron-down duration-500"
+                                    :class="{'rotate' : selected === 1}"
                                 ></i>
                             </div>
                         </button>
@@ -321,7 +343,8 @@
                             >
                                 <span> How can I request a new browser? </span>
                                 <i
-                                    class="fa-sharp fa-solid fa-chevron-down"
+                                    class="fa-sharp fa-solid fa-chevron-down duration-500"
+                                    :class="{'rotate' : selected === 2}"
                                 ></i>
                             </div>
                         </button>
@@ -358,7 +381,8 @@
                             >
                                 <span> Is ther a mobile app? </span>
                                 <i
-                                    class="fa-sharp fa-solid fa-chevron-down"
+                                    class="fa-sharp fa-solid fa-chevron-down duration-500"
+                                    :class="{'rotate' : selected === 3}"
                                 ></i>
                             </div>
                         </button>
@@ -393,7 +417,8 @@
                             >
                                 <span> What about othe Chromium browser? </span>
                                 <i
-                                    class="fa-sharp fa-solid fa-chevron-down"
+                                    class="fa-sharp fa-solid fa-chevron-down duration-500"
+                                    :class="{'rotate' : selected === 3}"
                                 ></i>
                             </div>
                         </button>
@@ -423,24 +448,33 @@
             >
                 Stay up-to-date with what we're doing
             </h3>
-            <form id="form-subscrible" class="mt-6">
+            <form
+                method="POST"                     
+            >
                 <input
-                    class="focus: border-1 rounded-lg border-gray-100 border-gray-100 py-3 px-4"
-                    placeholder="Enter your email address"
+                    name="email"
                     type="email"
+                    id="email"                    
+                    class="rounded-lg border-gray-100 border-gray-100 py-3 px-4 focus:border-gray-600 focus:bg-white focus:outline-none"
+                    placeholder="Enter your email address"
                     required
                 />
+
                 <button
                     class="btn-bm btn-red hover: font-semibold text-white hover:bg-red-600 hover:text-white"
+                    :disabled="loading"
                 >
                     Contact us
                 </button>
+                <span class="text-sm italic text-red-500">
+                    <div x-text="validation.email.message"></div>
+                </span>
             </form>
         </div>
 
         <footer class="bg-slate-900 py-14 px-6">
             <div
-                class="mx-auto grid max-w-[1400px] grid-cols-1 items-center justify-between md:grid-cols-2"
+                class="mx-auto grid max-w-md grid-cols-1 items-center justify-between md:grid-cols-2"
             >
                 <div
                     class="flex flex-col items-center text-center md:flex-row md:space-x-10"

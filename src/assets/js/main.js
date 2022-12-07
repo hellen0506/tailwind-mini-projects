@@ -1,6 +1,7 @@
 console.log('Application running.');
 
-const formShortLink = document.querySelector('#form-shortlink');
+// ---------------------valid-url---------------------
+const formShortLink = document.querySelector('#form-short-link');
 const inputURL = document.querySelector('#input-url');
 const errorMess = document.querySelector('#error-valid');
 if (formShortLink) {
@@ -10,7 +11,7 @@ function handleShortLink(e) {
     e.preventDefault();
     console.log(inputURL.value, 'dd');
     if (inputURL.value == '') {
-        errorMess.innerText = 'Please enter shorten link';
+        errorMess.innerText = 'Input is not empty';
         errorMess.classList.add('block');
         errorMess.classList.remove('hidden');
     }
